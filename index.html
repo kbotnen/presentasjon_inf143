@@ -65,21 +65,27 @@
         <section>
           <h2>Del 1, Innledning , Krister</h2>
         </section>
-    <section>
+        <section>
           <h3>Digital Signatur - Hva er det?</h3>
           <ul>
             <li class="fragment">
-              <b>Defineres av American Bar Association som:</b> <br>“A transformation of a message using an asymmetric cryptosystem and a hash function such that a person having the initial message and the signer’s public key can accurately determine (1) whether the transformation was created using the private key that corresponds to the signer’s public key, and (2) whether the initial message has been altered since the transformation was made.”
+              <b>Defineres av American Bar Association som:</b>
+              <br>
+              “A transformation of a message using an asymmetric cryptosystem and a hash function such that a person having the initial message and the signer’s public key can accurately determine (1) whether the transformation was created using the private key that corresponds to the signer’s public key, and (2) whether the initial message has been altered since the transformation was made.”
             </li>
             <li class="fragment">
-              <b>Mottaker kan altså:</b> <br> - avgjøre om avsender er den han utgir seg for å være. <br> - vite om meldingens innhold er endret etter signering. Implementerer også non-repudation.
+              <b>Mottaker kan altså:</b>
+              <br>
+              - avgjøre om avsender er den han utgir seg for å være.
+              <br>
+              - vite om meldingens innhold er endret etter signering. Implementerer også non-repudation.
             </li>
             <li class="fragment">
               <b>Ifølge regjeringen i Norge</b>, er begrepet digital signatur vanligvis kun benyttet når man snakker om en elektronisk signatur basert på PKI.
             </li>
-            <!-- 
+            <!--
             <li class="fragment">
-              Oppsummering
+            Oppsummering
             </li> -->
           </ul>
         </section>
@@ -94,7 +100,13 @@
               <b>Digital signatur</b> = en form for elektronisk signatur
             </li>
             <li class="fragment">
-              <b>Andre elektroniske signaturer:</b><br> - Fingeravtrykk<br> - Iris skanner<br> - Håndskreven signatur på "touch-flate" m.m
+              <b>Andre elektroniske signaturer:</b>
+              <br>
+              - Fingeravtrykk
+              <br>
+              - Iris skanner
+              <br>
+              - Håndskreven signatur på "touch-flate" m.m
             </li>
 
           </ul>
@@ -107,43 +119,61 @@
             </li>
             <img src="bilder/dig_sign.jpg" alt="The digital signature process">
             <li class="fragment">
-              Hvis det skal være en "your eyes only" <br> melding, krypterer Alice selve <br> meldingen med Bob sin public key.
+              Hvis det skal være en "your eyes only"
+              <br>
+              melding, krypterer Alice selve
+              <br>
+              meldingen med Bob sin public key.
             </li>
           </ul>
         </section>
-         <section>
+        <section>
           <h3>Digital vs Håndskrevne signaturer: Risiko</h3>
           <ul>
             <li class="fragment">
-              <b>Non-repudation - uavviselighet</b> <br> - Håndskreven signatur kan forfalskes med riktig utstyr <br> - Digital signatur er til en viss grad uavviselig (Mer om hvorfor senere). 
+              <b>Non-repudation - uavviselighet</b>
+              <br>
+              - Håndskreven signatur kan forfalskes med riktig utstyr
+              <br>
+              - Digital signatur er til en viss grad uavviselig (Mer om hvorfor senere).
             </li>
             <li class="fragment">
-              <b>Kunnskap</b> <br> - Alle kan gjenkjenne en håndskreven signatur. <br> - Digitale sertifikater er vanskeligere å forstå.
+              <b>Kunnskap</b>
+              <br>
+              - Alle kan gjenkjenne en håndskreven signatur.
+              <br>
+              - Digitale sertifikater er vanskeligere å forstå.
             </li>
             <li class="fragment">
-              <b>Tap av signert dokument</b> <br> - Fysiske dokumenter med håndskreven signatur må stjeles eller brennes <br> - Digitalt dokument kan mistes lettere.
+              <b>Tap av signert dokument</b>
+              <br>
+              - Fysiske dokumenter med håndskreven signatur må stjeles eller brennes
+              <br>
+              - Digitalt dokument kan mistes lettere.
             </li>
             <li class="fragment">
-              <b>Løsninger der håndskrevne signaturer møter elektroniske signaturer øker risiko</b> <br> - Posten benytter et slikt system. <br> - Signaturer legges ut på internettet.
+              <b>Løsninger der håndskrevne signaturer møter elektroniske signaturer øker risiko</b>
+              <br>
+              - Posten benytter et slikt system.
+              <br>
+              - Signaturer legges ut på internettet.
             </li>
           </ul>
         </section>
         <section>
           <h3>Et eksempel fra Tollpost</h3>
           <ul>
-          <img src="bilder/hand_sign_online.png" alt="Signature online">
+            <img src="bilder/hand_sign_online.png" alt="Signature online">
             <li class="fragment">
               Her er signatur kun beskyttet av et sendingsnummer?
             </li>
             <li class="fragment">
               Er dette ok??!
             </li>
-         
+
           </ul>
-        </section>        
-        
-        
-        
+        </section>
+<!--
         <section>
           <h3>Hvorfor bruker vi digitale signaturer?</h3>
           <ul>
@@ -169,9 +199,122 @@
             </li>
           </ul>
         </section>
-
+-->
         <section>
-          <h2>Del 2, Signaturer idag, Kristian</h2>
+          <h2>Del 2, Fordeler og ulemper, Trond</h2>
+        </section>
+        
+       <section>
+          <h3>Hvorfor bruker vi digitale signaturer?</h3>
+          <ul>
+            <li class="fragment">
+              Penn & papir
+            </li>
+            <li class="fragment">
+              Sikrere?
+            </li>
+          </ul>
+       </section>
+       
+       <section>
+         <h3>Eksempler</h3>
+         <ul>
+            <li class="fragment">
+              Statsbudsjett og lover (USA)
+            </li>
+            <li class="fragment">
+              Vitnemål
+            </li>
+            <li class="fragment">
+              Kontrakter
+            </li>
+            <li class="fragment">
+              Kvitteringer
+            </li>                        
+          </ul>
+      </section>
+      
+       <section>
+         <h3>Fordeler med digitale signaturer</h3>
+         <ul>
+            <li class="fragment">
+              Autentiserer
+            </li>
+            <ul>
+              <li class="fragment">Garanterer riktig avsender</li>
+            </ul>
+            <li class="fragment">
+              Integritet
+            </li>
+            <ul>
+              <li class="fragment">Garanterer at dokumentet ikke er endret</li>
+            </ul>            
+            <li class="fragment">
+              Ikke benekting (non-repudiation)
+            </li>
+            <ul>
+            <li class="fragment">
+              Det skal ikke være mulig å benekte signeringer i etterkant
+            </li>  
+            <li class="fragment">
+              Trusted third partie (TTP)
+            </li>  
+            <ul>
+            <li class="fragment">
+              Samler bevis fra begge parter, tidsstempler
+            </li>
+            </ul>
+            </ul>                                                 
+          </ul>
+      </section>      
+
+       <section>
+         <h3>Svakheter med digitale signaturer</h3>
+         <ul>
+            <li class="fragment">
+              Private nøkler
+            </li>
+            <li class="fragment">
+              Certificate revocation list (CRL)
+            </li>
+            <li class="fragment">
+              Krever uavhengig trusted partie?
+            </li>
+            <li class="fragment">
+              Kost / nytte
+            </li>  
+            <li class="fragment">
+              Trusted third partie (TTP)
+            </li>                                                 
+          </ul>
+      </section>
+      
+       <section>
+         <h3>Hvorfor bruker vi det ikke mer enn det vi gjør idag?</h3>
+         <ul>
+            <li class="fragment">
+              Kostnader
+            </li>
+            <li class="fragment">
+              Tillit
+            </li>
+            <li class="fragment">
+              Lover og regler
+            </li>                                             
+          </ul>
+      </section>        
+                      
+        <section>
+          <h3>Fordeler og ulemper ferdig...</h3>
+          <ul>
+            <li class="fragment">
+              Spørsmål til del 2?
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Del 3, Signaturer idag, Kristian</h2>
         </section>
         <!--
         <section>
@@ -360,30 +503,11 @@
           <h3>Signaturer idag ferdig...</h3>
           <ul>
             <li class="fragment">
-              Spørsmål til del 2?
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Del 3, Arkitektur</h2>
-        </section>
-        <section>
-          <h3>Nationwide PKI</h3>
-          <ul>
-            <li class="fragment">
-              PKI for dummies
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3>Arkitektur ferdig...</h3>
-          <ul>
-            <li class="fragment">
               Spørsmål til del 3?
             </li>
           </ul>
         </section>
+
 
         <section>
           <h2>Applaus!</h2>
