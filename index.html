@@ -63,27 +63,87 @@
         </section>
 
         <section>
-          <h2>Del 1, Innledning</h2>
+          <h2>Del 1, Innledning , Krister</h2>
         </section>
-        <section>
-          <h3>Hva er digitale signaturer?</h3>
+    <section>
+          <h3>Digital Signatur - Hva er det?</h3>
           <ul>
             <li class="fragment">
-              Et oversiktbilde over temaet
+              <b>Defineres av American Bar Association som:</b> <br>“A transformation of a message using an asymmetric cryptosystem and a hash function such that a person having the initial message and the signer’s public key can accurately determine (1) whether the transformation was created using the private key that corresponds to the signer’s public key, and (2) whether the initial message has been altered since the transformation was made.”
             </li>
+            <li class="fragment">
+              <b>Mottaker kan altså:</b> <br> - avgjøre om avsender er den han utgir seg for å være. <br> - vite om meldingens innhold er endret etter signering. Implementerer også non-repudation.
+            </li>
+            <li class="fragment">
+              <b>Ifølge regjeringen i Norge</b>, er begrepet digital signatur vanligvis kun benyttet når man snakker om en elektronisk signatur basert på PKI.
+            </li>
+            <!-- 
+            <li class="fragment">
+              Oppsummering
+            </li> -->
+          </ul>
+        </section>
+
+        <section>
+          <h3>Forholdet mellom elektroniske og digitale signaturer</h3>
+          <ul>
+            <li class="fragment">
+              “Elektronisk signatur er en generell betegnelse på teknikker som kan benyttes til å “signere” digital informasjon på tilsvarende måte som en håndskrevet signatur.” <b>– Post- og teletilsynet.</b>
+            </li>
+            <li class="fragment">
+              <b>Digital signatur</b> = en form for elektronisk signatur
+            </li>
+            <li class="fragment">
+              <b>Andre elektroniske signaturer:</b><br> - Fingeravtrykk<br> - Iris skanner<br> - Håndskreven signatur på "touch-flate" m.m
+            </li>
+
           </ul>
         </section>
         <section>
           <h3>Hvordan fungerer digitale signaturer?</h3>
           <ul>
             <li class="fragment">
-              X.509 + extensions
+              En illustrasjon:
             </li>
+            <img src="bilder/dig_sign.jpg" alt="The digital signature process">
             <li class="fragment">
-              Kryptografi
+              Hvis det skal være en "your eyes only" <br> melding, krypterer Alice selve <br> meldingen med Bob sin public key.
             </li>
           </ul>
         </section>
+         <section>
+          <h3>Digital vs Håndskrevne signaturer: Risiko</h3>
+          <ul>
+            <li class="fragment">
+              <b>Non-repudation - uavviselighet</b> <br> - Håndskreven signatur kan forfalskes med riktig utstyr <br> - Digital signatur er til en viss grad uavviselig (Mer om hvorfor senere). 
+            </li>
+            <li class="fragment">
+              <b>Kunnskap</b> <br> - Alle kan gjenkjenne en håndskreven signatur. <br> - Digitale sertifikater er vanskeligere å forstå.
+            </li>
+            <li class="fragment">
+              <b>Tap av signert dokument</b> <br> - Fysiske dokumenter med håndskreven signatur må stjeles eller brennes <br> - Digitalt dokument kan mistes lettere.
+            </li>
+            <li class="fragment">
+              <b>Løsninger der håndskrevne signaturer møter elektroniske signaturer øker risiko</b> <br> - Posten benytter et slikt system. <br> - Signaturer legges ut på internettet.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Et eksempel fra Tollpost</h3>
+          <ul>
+          <img src="bilder/hand_sign_online.png" alt="Signature online">
+            <li class="fragment">
+              Her er signatur kun beskyttet av et sendingsnummer?
+            </li>
+            <li class="fragment">
+              Er dette ok??!
+            </li>
+         
+          </ul>
+        </section>        
+        
+        
+        
         <section>
           <h3>Hvorfor bruker vi digitale signaturer?</h3>
           <ul>
@@ -111,7 +171,7 @@
         </section>
 
         <section>
-          <h2>Del 2, Signaturer idag</h2>
+          <h2>Del 2, Signaturer idag, Kristian</h2>
         </section>
         <!--
         <section>
