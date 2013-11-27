@@ -78,11 +78,13 @@
               “A transformation of a message using an asymmetric cryptosystem and a hash function such that a person having the initial message and the signer’s public key can accurately determine (1) whether the transformation was created using the private key that corresponds to the signer’s public key, and (2) whether the initial message has been altered since the transformation was made.”
             </li>
             <li class="fragment">
-              <b>Mottaker kan altså:</b>
+              <b>Endring av en melding slik at mottaker kan:</b>
               <br>
               - avgjøre om avsender er den han utgir seg for å være.
               <br>
-              - vite om meldingens innhold er endret etter signering. Implementerer også non-repudation.
+              - vite om meldingens innhold er endret etter signering.
+              <br> 
+              - være sikker på at avsender har sendt meldingen (non-repudation).
             </li>
             <li class="fragment">
               <b>Ifølge regjeringen i Norge</b>, er begrepet digital signatur vanligvis kun benyttet når man snakker om en elektronisk signatur basert på PKI.
@@ -135,7 +137,7 @@
               <br>
               - Håndskreven signatur kan forfalskes med riktig utstyr
               <br>
-              - Digital signatur er til en viss grad uavviselig (Mer om hvorfor senere).
+              - Digital signatur er til en viss grad uavviselig i Norge (Mer om hvorfor senere).
             </li>
             <li class="fragment">
               <b>Kunnskap</b>
@@ -147,9 +149,9 @@
             <li class="fragment">
               <b>Tap av signert dokument</b>
               <br>
-              - Fysiske dokumenter med håndskreven signatur må stjeles eller brennes
+              - Fysiske dokumenter med håndskreven signatur må fysisk destrueres
               <br>
-              - Digitalt dokument kan mistes lettere.
+              - Digitalt dokument kan slettes ved en feil, data kan bli korrupt (Privat sektor).
             </li>
             <li class="fragment">
               <b>Løsninger der håndskrevne signaturer møter elektroniske signaturer øker risiko</b>
