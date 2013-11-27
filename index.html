@@ -51,7 +51,7 @@
               Del 1, Innledning , Krister
             </li>
             <li class="fragment">
-              Del 2, Kryptografi , John-Petter
+              Del 2, Trusselen mot RSA , John-Petter
             </li>
             <li class="fragment">
               Del 3, Fordeler og ulemper, Trond
@@ -187,7 +187,7 @@
         </section>
 
         <section>
-          <h2>Del 2, Kryptografi</h2>
+          <h2>Del 2, Trusselen mot RSA</h2>
           <p>John-Petter</p>
         </section>
 
@@ -209,11 +209,11 @@
         <section>
           <h3>RSA algoritmen, fast forward</h3>
           <pre>
-            n = p * q
+            <b>n = p * q</b>
             φ(n) = φ(p-1) * φ(q-1)
             1 < e < φ(n)
+            d = (2(φ(n))+1) / e)
             
-            (Det som skulle stått over: d = (2(φ(n))+1)/e).
             m^e mod n = c
             c^d mod n = m
         </pre>
@@ -249,6 +249,7 @@
             <li class="fragment">
               2048-bit Web sertifikater: 20 av 3.2*10^6 hadde svakhet
             </li>
+           <br /> 
             <li class="fragment">
               Aug 2012: 1/4 av sjekkede web sertifikater brukte 2048
             </li>
@@ -256,6 +257,7 @@
         </section>
 
         <section>
+          <h3>Følger</h3>
           <ul>
             <li class="fragment">
               Microsoft krever 4069 bit av alle nye Root certificates (fra 11.Nov 2013)
@@ -274,6 +276,7 @@
             <li class="fragment">
               Trusselen er reel
             </li>
+            <br />
             <li class="fragment">
               Sikre høy entropi under valg av p og q
             </li>
@@ -288,7 +291,7 @@
         </section>
 
         <section>
-          <h3>Kryptografi ferdig...</h3>
+          <h3>Trusselen mot RSA ferdig...</h3>
           <ul>
             <li class="fragment">
               Spørsmål til del 2?
