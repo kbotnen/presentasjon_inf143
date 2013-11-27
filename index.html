@@ -67,7 +67,8 @@
         </section>
 
         <section>
-          <h2>Del 1, Innledning , Krister</h2>
+          <h2>Del 1, Innledning</h2>
+          <p>Krister</p>
         </section>
         <section>
           <h3>Digital Signatur - Hva er det?</h3>
@@ -186,7 +187,104 @@
         </section>
 
         <section>
-          <h2>Del 2, Kryptografi, John-Petter</h2>
+          <h2>Del 2, Kryptografi</h2>
+          <p>John-Petter</p>
+        </section>
+
+        <section>
+          <h3>Busted!?</h3>
+          <ul>
+            <li class="fragment">
+              19 Sep 2013: RSA Security råder kunder til å bytte fra sin default PsaudoRandom Number Generator
+            </li>
+            <li class="fragment">
+              Dette på bakgrunn av Mr. Snowdens lekkasjer, som bl.a. antyder at NSA har fått in en backdoor i algoritmen
+            </li>
+            <li class="fragment">
+              Big deal?
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>RSA algoritmen, fast forward</h3>
+          <pre>
+            n = p * q
+            φ(n) = φ(p-1) * φ(q-1)
+            1 < e < φ(n)
+            
+            (Det som skulle stått over: d = (2(φ(n))+1)/e).
+            m^e mod n = c
+            c^d mod n = m
+        </pre>
+        </section>
+
+        <section>
+          <h3>Matten er solid, men</h3>
+          <ul>
+            <li class="fragment">
+              p og q er avhengig av stor/god entropi
+            </li>
+            <li class="fragment">
+              Deler to "n" enten p eller q, kan man raskt vha GCD finne det delte primtallet
+            </li>
+            <li class="fragment">
+              Dette vil videre føre til at den private nøkelen kan beregnes!
+            </li>
+            <li class="fragment">
+              ==> En bevisst svakhet i PRNG vil svekke sikkerheten til RSA!!
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>14.Feb '12</h3>
+          <ul>
+            <li class="fragment">
+              PGP style public keys: OK
+            </li>
+            <li class="fragment">
+              1024 bit Web sertifikat: 0.2% og 0.4% med svakhet
+            </li>
+            <li class="fragment">
+              2048-bit Web sertifikater: 20 av 3.2*10^6 hadde svakhet
+            </li>
+            <li class="fragment">
+              Aug 2012: 1/4 av sjekkede web sertifikater brukte 2048
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li class="fragment">
+              Microsoft krever 4069 bit av alle nye Root certificates (fra 11.Nov 2013)
+            </li>
+            <li class="fragment">
+              "RSA 1024 may be blocked from operation in Windows without notice in the near future."
+            </li>
+            <li class="fragment">
+              De er ikke alene om å heve kravene til nøkellengden
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Konklusjon</h3>
+          <ul>
+            <li class="fragment">
+              Trusselen er reel
+            </li>
+            <li class="fragment">
+              Sikre høy entropi under valg av p og q
+            </li>
+            <li class="fragment">
+              Høyne krav til nøkkel lengde
+            </li>
+            <li class="fragment">
+              Skanne web sertifikater etter "svake" sertifikater, og varsle
+            </li>
+          </ul>
+
         </section>
 
         <section>
@@ -199,7 +297,8 @@
         </section>
 
         <section>
-          <h2>Del 3, Eksempler, fordeler og svakheter, Trond</h2>
+          <h2>Del 3, Eksempler, fordeler og svakheter</h2>
+          <p>Trond</p>
         </section>
 
         <section>
@@ -315,7 +414,8 @@
         </section>
 
         <section>
-          <h2>Del 4, Signaturer idag, Kristian</h2>
+          <h2>Del 4, Signaturer idag</h2>
+          <p>Kristian</p>
         </section>
 
         <section>
